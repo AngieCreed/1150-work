@@ -1,0 +1,26 @@
+.color1 {
+    color: lightgreen;
+    text-align: center;
+    }
+
+#color2 {
+    color: blue;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    background: darkgray;   
+}
+
+#color2 p{
+    color: red;
+  }
+
+.option {
+    border: thick solid black;
+    border-radius: 2em;
+    background: lightgray;
+    text-align: center;
+    display: inline-block;
+    width: 32%;
+
+}

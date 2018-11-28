@@ -1,0 +1,19 @@
+body{
+    background: lightskyblue;
+}
+
+table {
+    border: solid black;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+h2 {
+    text-align: center;
+    }
+
+th, td {
+    border: 1px solid black;
+    padding: 15px;
+    }

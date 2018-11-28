@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- All of our HTML code will go here
+    <p id="testParagraph">sample text</p>
+    <p class="sampleClass">This paragraph has a class of "sampleClass"</p>
+    <button id="clickThisButton">I want to be clicked</button>
+    <!-- <h1>Hello World</h1> -->
+
+    <!-- All of our JavaScript code will go here -->
+    <script type="text/javascript">
+    var x = 10;
+    // console.log(x);
+    document.getElementById("testParagraph").style.color = "blue";
+    console.log(document.getElementById("testParagraph").style.color);
+    console.log(document.querySelectorAll("p.sampleClass"));
+    // document.querySelectorAll("p.sampleClass")[0].innerHTML = "<span>I am a whole new element!</span>";
+    document.querySelectorAll("p.sampleClass")[0].innerHTML = "";
+    document.getElementById('clickThisButton').addEventListener('click', () => {
+        console.log('I was clicked!');
+    });
+        document.getElementById('clickThisButton').addEventListener('click', (details) => {
+        console.log(details);
+    });
+    document.getElementById('clickThisButton').addEventListener('click', (details) => {
+        details.target.style.backgroundColor = 'red';
+    })
+    </script> -->
+</body>
+</html>

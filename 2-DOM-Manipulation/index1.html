@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- HTML Here -->
+    <label for="nameInput">Enter Your Name:</label>
+    <input type="text" id="nameInput" placeholder="John Smith"/>
+
+    <p>Welcome</p>
+    <p>No name has been entered</p>
+
+    <!-- JS Here -->
+    <script type="text/javascript">
+    document.getElementById("nameInput").addEventListener("keyup", (event) => {
+        console.log(event);
+    })
+        document.getElementById("nameInput").addEventListener("keyup", (event) => {
+        console.log(event.target.value);
+    });
+    document.getElementById("nameInput").addEventListener("keyup", (event) => {
+        console.log(event.target.value);
+        console.log(document.getElementsByTagName("p"));
+    });
+
+    document.getElementById("nameInput").addEventListener("keyup", (event) => {
+    document.getElementsByTagName("p")[1].innerText = `Everyone please welcome ${event.target.value} to the stage.`   
+    });
+
+    document.getElementById("nameInput").addEventListener("keyup", (event) => {
+        if (event.target.value === '') {
+            document.getElementsByTagName("p")[1].innerText = `No name has been entered`;
+        } else { 
+            document.getElementsByTagName("p")[1].innerText = `Everyone please welcome ${event.target.value} to the stage.`
+        }
+    });
+    
+    </script>
+    
+    
+</body>
+</html>
